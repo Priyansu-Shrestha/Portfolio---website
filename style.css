@@ -23,7 +23,15 @@ nav {
     top: 0;
     z-index: 1000;
 }
-
+#pp{
+    background-image: url(./picture/Priyansu.jpg);
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
 .logo {
     font-size: 1.8rem;
     font-weight: 600;
@@ -35,13 +43,36 @@ nav {
     text-decoration: none;
     color: #2c3e50;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: all 0.3s;
 }
-
+#about p,h2{
+    margin:0 2rem;
+}
+.social-media-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 10px;
+}
+.social-media-container i{
+    transition: all .3s;
+}
+.social-media-container i:hover{
+    transform: scale(1.4);
+}
+#about{
+    padding: 0 0 2rem 0;
+}
 .nav-links a:hover {
     color: #6c5ce7;
+    font-size: larger;    
 }
-
+.h1{
+    background-color: #6c5ce7;
+    padding: 10px;
+    color: white;
+    border-radius: 7px 7px 0 0;
+}
 .hero {
     text-align: center;
     padding: 6rem 2rem 5rem;
