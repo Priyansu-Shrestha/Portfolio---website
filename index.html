@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS -->
+<link rel="stylesheet" href="styles/style.css">  <!-- If CSS is in a "styles" folder -->
+
+<!-- JavaScript -->
+<script src="scripts/script.js"></script>        <!-- If JS is in a "scripts" folder -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyansu Shrestha - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Particle Container -->
+    <div id="particles-js"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-text="PS">PS</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link hover-underline">About</a></li>
+                <li><a href="#skills" class="nav-link hover-underline">Skills</a></li>
+                <li><a href="#work" class="nav-link hover-underline">Work</a></li>
+                <li><a href="#contact" class="nav-link hover-underline">Contact</a></li>
+            </ul>
+            <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <p class="greeting gradient-text">Hi, my name is</p>
+            <h1 class="hero-title glitch" data-text="Priyansu Shrestha">Priyansu Shrestha.</h1>
+            <h2 class="hero-subtitle typewriter">I build things for the web.</h2>
+            <p class="hero-description">I'm a full-stack developer specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products.</p>
+            <a href="#contact" class="cta-button hover-effect">
+                <span>Get In Touch</span>
+                <div class="liquid"></div>
+            </a>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title reveal">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <!-- Skill cards will be dynamically loaded -->
+        </div>
+    </section>
+
+    <section id="work">
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+        <div class="projects-grid">
+            <!-- Project cards will be dynamically loaded -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info reveal">
+                <h3 class="gradient-text">Let's Connect!</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>priyansuxtha@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+977 9762883530</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link hover-effect" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link hover-effect" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link hover-effect" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required class="form-input">
+                    <span class="input-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required class="form-input">
+                    <span class="input-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message" rows="5" required class="form-input"></textarea>
+                    <span class="input-border"></span>
+                </div>
+                <button type="submit" class="cta-button hover-effect">
+                    <span>Send Message</span>
+                    <div class="liquid"></div>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p class="reveal">Designed & Built by Priyansu Shrestha</p>
+            <div class="footer-links">
+                <a href="#" class="hover-effect">Resume</a>
+                <a href="#" class="hover-effect">Blog</a>
+                <a href="#" class="hover-effect">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
