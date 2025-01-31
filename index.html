@@ -3,89 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyansu Shrestha - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <title>Priyansu Shrestha - Advanced Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <div class="logo">Priyansu Shrestha</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+<body class="bg-gray-100">
+    <nav class="fixed w-full z-50 glassmorphism">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-gradient">Priyansu Shrestha</div>
+            <div class="space-x-6">
+                <a href="#about" class="hover:text-purple-600 transition">About</a>
+                <a href="#projects" class="hover:text-purple-600 transition">Projects</a>
+                <a href="#skills" class="hover:text-purple-600 transition">Skills</a>
+                <a href="#contact" class="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">Hire Me</a>
+            </div>
         </div>
     </nav>
 
-    <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my work, skills, and passion</p>
-    </section>
-
-    <div class="container">
-        <section id="about" class="about-section">
-            <div class="h1">
-            <h1>About Me</h1>
+    <header class="h-screen animated-bg flex items-center justify-center text-white text-center">
+        <div>
+            <h1 class="text-5xl font-bold mb-4">Priyansu Shrestha</h1>
+            <p class="text-2xl">Full Stack Developer | UI/UX Designer | Tech Innovator</p>
+            <div class="mt-8 space-x-4">
+                <a href="#projects" class="bg-white text-purple-600 px-6 py-3 rounded-full hover:bg-purple-50 transition">View Projects</a>
+                <a href="#contact" class="border-2 border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-purple-600 transition">Contact Me</a>
             </div>
-            <br>
-            <div id="pp"></div>
-            <br>
-            <h2>Professional & Concise</h2>
-            <br>
-            <p>I am a passionate Website Developer with expertise in [Python, C#, HTML, CSS, JavaScript, UI/UX Design]. My portfolio showcases innovative projects that blend creativity, technology, and problem-solving. Let's collaborate and bring ideas to life!</p>
+        </div>
+    </header>
 
-        </section>
-
-        <section id="projects" class="projects-section">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card"><h3>Project 1</h3><p>Web app showcasing frontend development skills.</p></div>
-                <div class="project-card"><h3>Project 2</h3><p>Creative storytelling with multimedia elements.</p></div>
-                <div class="project-card"><h3>Project 3</h3><p>AI-driven technical solution.</p></div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">Python</span>
-                <span class="skill">UI/UX Design</span>
-                <span class="skill">C Sharp</span>
-            </div>
-        </section>
-    </div>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Let's collaborate and bring creative ideas to life.</p>
-            <a href="mailto:priyansuxtha@gmail.com" target="_blank">
-                <button class="cta-button">Contact Me</button>
-            </a>
+    <section id="about" class="container mx-auto py-20 flex flex-col items-center text-center">
+        <div class="max-w-xl">
+            <h2 class="text-4xl font-bold mb-6 text-gradient">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Innovative full-stack developer with expertise in creating sophisticated web applications. Passionate about leveraging cutting-edge technologies to solve complex problems and deliver exceptional user experiences.
+            </p>
+        </div>
+        <div class="flex justify-center mt-8">
+            <img src="Priyansu.jpg" class="rounded-full w-64 h-64 object-cover shadow-2xl" alt="Priyansu Shrestha">
         </div>
     </section>
-    <div class="social-media-container">
-        
-        <a href="https://www.facebook.com/priyansu.shrestha.585112" target="_blank" title="Facebook">
-            <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://x.com/PRIYANSU_XTHA?t=gcFn-gHYIUHiOnuvhIFvmQ&s=09" target="_blank" title="Twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/priyansu.xtha?igsh=cXp2a250Nm5wYjZj" target="_blank" title="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="www.linkedin.com/in/priyansu-shrestha-34192b2b9" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
+
+    <section id="skills" class="bg-white py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">Technical Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="skill-tag bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Python</span>
+                <span class="skill-tag bg-blue-100 text-blue-800 px-4 py-2 rounded-full">JavaScript</span>
+                <span class="skill-tag bg-green-100 text-green-800 px-4 py-2 rounded-full">React</span>
+                <span class="skill-tag bg-red-100 text-red-800 px-4 py-2 rounded-full">Node.js</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mx-auto py-20">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gradient">Featured Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Project 1</h3>
+                <p class="text-gray-600 mb-4">Advanced web application with modern tech stack.</p>
+                <a href="#" class="text-purple-600 hover:underline">View Details</a>
+            </div>
+            <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Project 2</h3>
+                <p class="text-gray-600 mb-4">Innovative solution using AI and machine learning.</p>
+                <a href="#" class="text-purple-600 hover:underline">View Details</a>
+            </div>
+            <div class="project-card bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Project 3</h3>
+                <p class="text-gray-600 mb-4">Responsive and interactive web platform.</p>
+                <a href="#" class="text-purple-600 hover:underline">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-100 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gradient">Let's Connect</h2>
+            <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded">
+                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded">
+                <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded" rows="4"></textarea>
+                <button class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+<footer class="bg-gray-900 text-white py-8 text-center">
+    <div class="container mx-auto">
+        <p>&copy; 2025 Priyansu Shrestha. All Rights Reserved.</p>
+        <div class="mt-4 space-x-4">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <a href="https://www.linkedin.com/in/priyansu-shrestha-34192b2b9/" class="text-blue-400 hover:text-blue-500"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/Priyansu-Shrestha" class="text-gray-400 hover:text-gray-200"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://x.com/PRIYANSU_XTHA" class="text-blue-400 hover:text-blue-500"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.facebook.com/priyansu.shrestha" class="text-blue-600 hover:text-blue-700"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/priyansu_shrestha" class="text-pink-500 hover:text-pink-600"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
     </div>
-        <footer>
-        <p>&copy; 2025 Priyansu Shrestha. All rights reserved.</p>
-    </footer>
+</footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
