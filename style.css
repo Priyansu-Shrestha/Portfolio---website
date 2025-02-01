@@ -1,5 +1,5 @@
 :root {
-    --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    --primary-gradient: linear-gradient(135deg,#493D9E,#B2A5FF,#D1F8EF,#578FCA,#3674B5);
     --text-gradient: linear-gradient(to right, #6a11cb, #2575fc);
     --shadow-intense: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     --header-text-color: #ffffff; /* Set header text color to white */
@@ -11,6 +11,9 @@
     }
     .header-text {
     color: var(--header-text-color); /* Apply the header text color */
+    }
+    a{
+      text-wrap: nowrap;
     }
 
 .glassmorphism {
@@ -80,7 +83,10 @@
     border-radius: 0 4px 0 32px;
   }
   
-  .go-arrow {
+  #projo{
+    display: flex;
+  }
+  ow {
     margin-top: -4px;
     margin-right: -4px;
     color: white;
@@ -179,27 +185,16 @@ button {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 6px 6px 12px #111cb6,
-                -6px -6px 12px #2214bb;
+    border: 2px solid white;
    }
    
-   button::before {
-    content: '';
-    width: 0;
-    height: 3em;
-    border-radius: 30em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to right, #17f8f8 0%, #bfdd2a 100%);
-    transition: .5s ease;
-    display: block;
-    z-index: -1;
-   }
-   
-   button:hover::before {
-    width: 9em;
-   }
+button:hover{
+  color: #3674B5;
+  background-color: white;
+}
+button:active{
+  transform: scale(1.1);
+}
 
 .contact-form button:hover {
     background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
@@ -208,5 +203,10 @@ button {
 @media screen and (max-width: 768px) {
     .text-5xl {
         font-size: 2.5rem;
+    }
+    #projo{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 }
