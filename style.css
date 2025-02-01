@@ -25,6 +25,7 @@
     animation: gradientBG 15s ease infinite;
 }
 
+
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -81,6 +82,38 @@
     cursor: pointer;
     transition: background 0.3s;
 }
+/* From Uiverse.io by xueyuantan */ 
+button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #111cb6,
+                -6px -6px 12px #2214bb;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #ffee00 0%, #22d4e0 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 9em;
+   }
 
 .contact-form button:hover {
     background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
