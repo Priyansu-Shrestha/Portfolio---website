@@ -85,6 +85,7 @@
   
   #projo{
     display: flex;
+    color: #2575fc;
   }
   ow {
     margin-top: -4px;
@@ -208,5 +209,13 @@ button:active{
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      color: #a14040;
+      text-align: right;
+    }
+    #submit{
+      flex-direction: column;
+      color: #e4e7ed;
+      font-style: italic;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
